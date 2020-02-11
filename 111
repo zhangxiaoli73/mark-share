@@ -1,0 +1,24 @@
+RAPH_PREFIX environment variable or function argument.
+2020-02-11 20:08:45.400988: I ./tensorflow/core/common_runtime/optimization_registry.cc:40] Running optimization pass: LowerFunctionalOpsPass
+2020-02-11 20:08:45.684546: W ./tensorflow/core/util/dump_graph.cc:87] Failed to dump after_phase_0_LowerFunctionalOpsPass_140195852746816 because dump location is not  specified through either TF_DUMP_GRAPH_PREFIX environment variable or function argument.
+2020-02-11 20:08:45.702689: I ./tensorflow/core/common_runtime/optimization_registry.cc:40] Running optimization pass: ParallelConcatRemovePass
+2020-02-11 20:08:45.984054: W ./tensorflow/core/util/dump_graph.cc:87] Failed to dump after_phase_0_ParallelConcatRemovePass_140195852746816 because dump location is not  specified through either TF_DUMP_GRAPH_PREFIX environment variable or function argument.
+2020-02-11 20:08:46.002154: I ./tensorflow/core/common_runtime/optimization_registry.cc:38] Running optimization phase 25
+2020-02-11 20:08:46.002236: I ./tensorflow/core/common_runtime/optimization_registry.cc:40] Running optimization pass: IsolatePlacerInspectionRequiredOpsPass
+2020-02-11 20:08:46.002261: I ./tensorflow/core/common_runtime/isolate_placer_inspection_required_ops_pass.cc:34] IsolatePlacerInspectionRequiredOpsPass::Run
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Aborted (core dumped)
+
+
+  total iterations count 1.
+dnnl_verbose,info,DNNL v0.18.0 (commit N/A)
+dnnl_verbose,info,Detected ISA is Intel AVX2
+dnnl_verbose,exec,gpu,matmul,ocl:ref:any,undef,src_f16::blocked:ab:f0 wei_f16::blocked:ab:f0 dst_f16::blocked:ab:f0,,,m2n4096k2048,11.1121
+dnnl_verbose,exec,gpu,matmul,ocl:ref:any,undef,src_f16::blocked:ab:f0 wei_f16::blocked:ab:f0 dst_f16::blocked:ab:f0,,,m2n4096k2048,10.8779
+dnnl_verbose,exec,gpu,matmul,ocl:ref:any,undef,src_f16::blocked:ab:f0 wei_f16::blocked:ab:f0 dst_f16::blocked:ab:f0,,,m2n4096k2048,3.87598
+dnnl_verbose,exec,gpu,matmul,ocl:ref:any,undef,src_f16::blocked:ab:f0 wei_f16::blocked:ab:f0 dst_f16::blocked:ab:f0,,,m2n4096k2048,3.86108
+dnnl_verbose,exec,gpu,matmul,ocl:ref:any,undef,src_f16::blocked:ab:f0 wei_f16::blocked:ab:f0 dst_f16::blocked:ab:f0,,,m2n4096k2048,3.75586
+dnnl_verbose,exec,gpu,matmul,ocl:ref:any,undef,src_f16::blocked:ab:f0 wei_f16::blocked:ab:f0 dst_f16::blocked:ab:f0,,,m2n4096k2048,3.9209
+dnnl_verbose,exec,gpu,matmul,ocl:ref:any,undef,src_f16::blocked:ab:f0 wei_f16::blocked:ab:f0 dst_f16::blocked:ab:f0,,,m2n4096k2048,4.26904
+dnnl_verbose,exec,gpu,matmul,ocl:ref:any,undef,src_f16::blocked:ab:f0 wei_f16::blocked:ab:f0 dst_f16::blocked:ab:f0,,,m2n4096k2048,3.72607
